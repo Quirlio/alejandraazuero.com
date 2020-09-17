@@ -1,0 +1,60 @@
+doctype html
+html
+
+  head
+    meta(charset='utf8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+    meta(name='description', content='Alejandra Azuero | --')
+    meta(name='author', content= "Wind & Fog")
+    //- social share!
+    //- meta(property="og:image" content="http://gesusland.com/img/bg/gland-cover.jpg")
+    //- meta(property="og:image:type" content="/img/geoff.jpg")
+    //- meta(property="og:image:width" content="1200")
+    //- meta(property="og:image:height" content="628")
+    //- uncomment if your site is responsive!
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Alejandra Azuero | #{post.title}
+    link(rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/apple-touch-icon-57x57.png" )
+    link(rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/apple-touch-icon-114x114.png" )
+    link(rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/apple-touch-icon-72x72.png" )
+    link(rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144x144.png" )
+    link(rel="apple-touch-icon-precomposed" sizes="60x60" href="/img/apple-touch-icon-60x60.png" )
+    link(rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/apple-touch-icon-120x120.png" )
+    link(rel="apple-touch-icon-precomposed" sizes="76x76" href="/img/apple-touch-icon-76x76.png" )
+    link(rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/apple-touch-icon-152x152.png" )
+    link(rel="icon" type="image/png" href="/img/favicon-196x196.png" sizes="196x196" )
+    link(rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96" )
+    link(rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" )
+    link(rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" )
+    link(rel="icon" type="image/png" href="/img/favicon-128.png" sizes="128x128" )
+    meta(name="application-name" content="Gesusland" )
+    meta(name="msapplication-TileColor" content="#" )
+    meta(name="msapplication-TileImage" content="/img/mstile-144x144.png" )
+    meta(name="msapplication-square70x70logo" content="/img/mstile-70x70.png" )
+    meta(name="msapplication-square150x150logo" content="/img/mstile-150x150.png" )
+    meta(name="msapplication-wide310x150logo" content="/img/mstile-310x150.png" )
+    meta(name="msapplication-square310x310logo" content="/img/mstile-310x310.png" )
+    
+    link(href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;600&family=Nunito+Sans:wght@300;400&display=swap" rel="stylesheet")
+
+    != css('/')
+
+  body
+
+    div(class="d-none")
+      div(class=post.slug.indexOf("home") > -1 ? "header js-header" : "header open")
+        div(class="container")
+          div(class="row")
+            div(class="col-5 text-left")
+              a(href="/" class="title-header d-inline-block")
+                // h4(class="text-white title d-inline-block") Gesusland
+          // hide nav for now
+            div(class="col text-right")
+              a(href="/about" class=post.slug.indexOf("about") > -1 ? "active link-header" : "link-header not") ABOUT
+              a(href="/blog" class=post.slug.indexOf("blog") > -1 ? "active link-header" : "link-header not") BLOG
+              a(href="/music" class=post.slug.indexOf("music") > -1 ? "active link-header" : "link-header not") MUSIC
+          //
+
+    block content
+
+    != js('/')

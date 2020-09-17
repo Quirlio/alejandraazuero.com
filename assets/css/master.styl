@@ -1,0 +1,73 @@
+@import '_settings'
+
+normalize-css()
+base()
+
+html,
+body
+  background: $white
+
+html, html a
+  -webkit-font-smoothing: antialiased
+
+body,
+p,
+li
+  font-family: 'Nunito Sans', sans-serif
+  font-weight: 300
+  font-size: 21px
+  color: $purple
+
+ul
+  padding-left: 0
+
+h1,
+h2,
+h3,
+.title
+  font-family: 'Karma', serif;
+
+h1.xl
+  font-size: 122px
+
+h1
+  font-size: 56px
+  line-height: 1 !important
+  color: $purple-light
+  font-weight: 300
+
+h2
+  font-size: 48px
+  color: $purple-light
+  line-height: 1 !important
+
+h3
+  font-size: 36px
+
+h4
+  font-size: 28px
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
+  font-weight: inherit;
+
+.block-full
+  min-height: 100vh
+
+.divider
+  width: 100px
+  height: 2px
+
+.divider-green
+  background: $green
+
+.divider-purple
+  background: $purple-light
+
+.bg-purple
+  background: $purple
+
+.bg-green
+  background: $green
+
+.text-white
+  color: $white
