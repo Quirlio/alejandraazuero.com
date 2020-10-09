@@ -7,7 +7,7 @@ extends layout
 
 block content
   div(class="container-outer block-full d-flex justify-content-center align-items-center")
-    a(href="#" class="btn btn-main top-right") EMAIL
+    a(href="mailto:alejandrazuero@gmail.com" class="btn btn-main top-right") EMAIL
     div(class="container")
       div(class="row justify-content-center")
         div(class="col-md-10 text-center")
@@ -17,46 +17,90 @@ block content
               a(href="#" data-target="#bio" class="js-scroll-to link-main") BIO
               a(href="#" data-target="#research-statement" class="js-scroll-to link-main") RESEARCH
               a(href="#" data-target="#publication-and-writing" class="js-scroll-to link-main") PUBLICATION & WRITING
-              a(href="#" class="link-main") Alejandra's CV
+              a(href="https://drive.google.com/file/d/1ScokrQZw-upDx-bPQjE56hBIvpveVrHj/view?ts=5f80deaa" target="_blank" class="link-main") Alejandra's CV
 
   div(id="bio" class="container-outer bg-black pt-0")
     div(class="container")
       div(class="row")
-        div(class="bg-image col-md-5 pr-0 pl-0 bg-profile")
+        div(class="bg-image col-md-5 bg-profile")
 
-        div(class="col-md-7 bg-white pl-0")
+        div(class="col-md-7 bg-white pl-0 border-left-green")
           div(class="p-5")
-            h1(class="m-0") Bio
-            div(class="divider divider-green-light mb-3 mt-3")
-            p(class="mb-3") Alejandra Azuero-Quijano is a PhD student and freelance writer affiliated to Harvard Law School (SJD candidate) and the anthropology department at the University of Chicago (PhD program). Her current research and writing explores the relation between law and aesthetics as well as issues of legal materiality, architecture and the politics of space in the field of international law.
-            p(class="mb-3") Azuero-Quijano's writing has appeared in Al Jazeera America and New American Writing.
-            p(class="mb-3") Her most recent project, [Re]Designing Crime after WWII: The Making of the Nuremberg Courtroom, explores the role of the U.S. Office of Strategic Services in defining the aesthetics of criminal justice at the Nuremberg Trials.
-            p(class="mb-0") Before moving to the U.S., Azuero-Quijano worked for UN-Women, IOM and UNHCR. Born in Bogota (Colombia), she obtained her LL.B. from Universidad de los Andes.
+            div(class="text-center")
+              h1(class="m-0") Bio
+              div(class="divider divider-green-light mb-5 mt-2")
+            p(class="mb-3") Alejandra Azuero-Quijano works at the intersection of law and anthropology. Her research examines the role of legal knowledge in political transition. Her first book manuscript, 
+              em Redesigning Crime
+              span , investigates the relation between design, criminal liability, and forensics. Her current book project, 
+              em Forensics of Finance
+              span , examines the role of financial forensic expertise in shaping Colombia’s most recent political transition. Azuero-Quijano holds an SJD from Harvard Law School and is a PhD Candidate in anthropology at the University of Chicago. Her academic writing is forthcoming in 
+              em Grey Room
+              span &nbsp;and 
+              em PoLAR
+              span . Her essays and poetry have appeared in 
+              em AlJazeera
+              span &nbsp;and 
+              em New American Writing
+              span , among others.
 
-  div(id="research-statement" class="bg-image bg-nuremberg-001 block-full d-flex justify-content-center align-items-center")
+  div(id="research-statement" class="bg-grey")
 
     div(class="container-outer")
       div(class="container")
         div(class="row")
-          div(class="col-md-12 bg-black pl-0")
-            div(class="p-5")
-              h1(class="m-0") Research Statement
-              div(class="divider divider-green mb-3 mt-3")
+          div(class="col-md-12")
+          
+            div(class="row")
+              div(class="col-md-7 bg-white border-right-green")
+                div(class="p-5")
+                  div(class="text-center")
+                    h2(class="m-0") Redesigning Crime: Remaking Criminal Liability at Nuremberg,
+                    div(class="divider divider-green-light mb-5 mt-2")
+                  p(class="mb-0") 
+                    em Redesigning Crime: Remaking Criminal Liability at Nuremberg
+                    span ,is a legal history of Nuremberg as the first 
+                    em global
+                    span &nbsp;criminal trial. Against the commonly accepted notion that legal aesthetics are subordinated to legal expertise, the book manuscript shows how the practice of designers working for U.S. intelligence agencies shaped the legal project of international criminal justice. Furthermore, it demonstrates how this newly designed forum of global justice rested on a double aesthetic movement: visualizing the Nazi political system through films and charts, while carefully staging the presence of the individually accused inside the courtroom. Organized into four chapters, the study redefines how we understand the making of legal knowledge. It shows that forensics is a design and aesthetic practice that creates the subjects and objects of punishment under criminal law – in this case the representation of Nazi political organization as a criminal conspiracy.
+              div(class="bg-image col-md-5 pl-0 bg-nuremberg-project")
+
+      div(class="container-outer-compact pb-0")
+        div(class="container")
+
+          div(class="row")
+            div(class="bg-image col-md-5 bg-current-project")
+
+            div(class="col-md-7 bg-white border-left-green")
+              div(class="p-5")
+                div(class="text-center")
+                  h2(class="m-0") Forensics of Finance: Colombia’s Experiments in Transitional Liberalism
+                  div(class="divider divider-green-light mb-5 mt-2")
+                p(class="mb-0") 
+                  em Forensics of Finance: Colombia’s Experiments in Transitional Liberalism
+                  span , is an ethnography that shows how the alignment of finance and forensic expertise shaped the project of political transition after the peace agreement between the state and Colombia’s Revolutionary Armed Forces (FARC), one of the oldest insurgent organizations in the world. It argues that the transformation of Colombia’s forensic knowledge production practices in preparation for the signing of the peace agreement recalibrated both the meaning of legal accountability and the project of political transition, thus creating new categories of criminality that then became the subject of criminal prosecution. Moreover, it demonstrates that this happened primarily through a mode of forensic knowledge centered on integrating financial risk analysis methodologies into the state’s prosecutorial apparatus. This experiment, in turn, led to a rise to prominence of finance as an object of forensic knowledge and source of criminal liability capable of exposing all types of social wrongs, from war crimes to corruption.
+
               
-              p(class="mb-4 text-sm") My research examines the role of law in political transition. In particular, I focus on the way in which 
-                em forensic practices 
-                span shape moments of social crisis, visions of accountability, and the politics of justice. Forensics is frequently understood as the science of criminal truth that arrives after the fact. In contrast, my work puts forward a concept of forensic knowledge as a discourse and practice that works 
-                em before 
-                span any criminal act to reshape existing social conditions. It is precisely this transformative potential, I argue, that extends forensics’ influence beyond criminal liability to defining the politics of legal accountability and justice in the context of political change. But, how in practice does forensic knowledge shape horizons of political transformation? In what ways does it constitute a medium for enabling or disabling alternative visions of law and justice? For the past ten years, my work as a legal scholar and an anthropologist has addressed these questions from a dual perspective – the rise of global criminal liability after World War II and post-Cold War political transitions in Latin America – using a combination of legal analysis, ethnography, and historiography. My research on forensic practices contributes an interdisciplinary understanding to the ways in which non-legal experts have come to shape the limits of criminal justice and legal accountability.
-              a(href="#" class="btn btn-main") VIEW IN FULL
-              
-  div(id="publication-and-writing" class="bg-black")
+  div(id="publication-and-writing" class="bg-image bg-nuremberg-001")
     div(class="container-outer")
       div(class="container")
-        div(class="row")
-          div(class="col-md-12 pl-0")
-            div(class="p-5")
-              h1(class="m-0") Publication & Writing
-              div(class="divider divider-green mb-3 mt-3")
+        div(class="row justify-content-center")
+          div(class="col-md-8 pl-0")
+            div(class="p-5 bg-black")
               
-              p(class="mb-4 text-sm") ...
+              div(class="text-center")
+                h1(class="m-0") Publication & Writing
+                div(class="divider divider-green-light mb-5 mt-2")
+                
+              p(class="mb-2 text-sm text-bold") Forthcoming 
+              p(class="mb-5 text-sm") “Ambigüedad, Ficción e Ironía en el Museo Forense” [“Ambiguity, Fiction and Irony at the Forensic Museum.”] In La Violencia y sus Sombras en Colombia y México (M. Uribe and R. Parrini, eds.). Bogotá: Universidad del Rosario.
+              
+              p(class="mb-2 text-sm text-bold") Forthcoming
+              p(class="mb-5 text-sm") “Genealogía del Contexto como Técnica Forense en la Práctica de Justicia y Paz” [“Genealogy of Context Analysis as Forensic Technique in Colombia’s ‘Justicia y Paz’ Trials”]. In Justicia y Paz desde Otros Lenguajes: Una Mirada Retrospectiva (M. Acosta and J. Acosta, eds.). Bogotá: Universidad de la Sabana.
+              
+              p(class="mb-2 text-sm text-bold") 2012
+              p(class="mb-5 text-sm") “Science and International Thematic Prosecution of Sex Crimes: A Tale of Re- essentialization.” In Thematic prosecution of International Sex Crimes (M. Bergsmo, ed.). Oslo: Forum for International Criminal and Humanitarian Law.
+              
+              p(class="mb-2 text-sm text-bold") 2012 (with Jocelyn Kelly)
+              p(class="mb-5 text-sm") “A Tale of Two Conflicts: An Unexpected Reading of Sexual Violence in Conflict Through the Cases of Colombia and DRC.” In Proving International Sex Crimes (M. Bergsmo, A. Butenschon Skre and E. Wood, eds.). Oslo: Forum for International Criminal and Humanitarian Law.
+              
+              p(class="mb-2 text-sm text-bold") 2009
+              p(class="mb-0 text-sm") Reconocimiento Jurídico de las Parejas del mismo Sexo en Colombia” [“Legal Recognition of Same-Sex Couples Rights in Colombia”]. In Activismo Social y Derechos de los LGTB en Colombia. Bogotá: ILSA.
