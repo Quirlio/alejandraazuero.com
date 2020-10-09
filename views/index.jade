@@ -6,26 +6,45 @@ slug: home
 extends layout
 
 block content
-
-  div(class="block-full d-flex justify-content-center align-items-center")
-    div(class="container pt-4 pb-4")
+  div(class="container-outer-compact")
+    div(class="container")
       div(class="row justify-content-center")
-        div(class="col-md-6 text-center")
+        div(class="col-md-10 text-center")
           div(class="p-4")
             h1(class="mt-0 mb-4") Alejandra Azuero-Quijano is an anthropologist, legal scholar, and a writer.
             p
-              a(href="#" class="link-main") BIO
-              a(href="#" class="link-main") RESEARCH STATEMENT
-              a(href="#" class="link-main") CONTACT
+              a(href="#" data-target="#bio" class="js-scroll-to link-main") Bio
+              a(href="#" data-target="#research-statement" class="js-scroll-to link-main") Research Statement
+              a(href="#" class="link-main") Alejandra's CV
 
-  div(class="block-full d-flex justify-content-center align-items-center bg-black")
+  div(id="bio" class="container-outer pt-0")
     div(class="container")
       div(class="row")
-        div(class="col-md-5")
-          img(src="/img/alejandra-azuero-quijano.jpg", class="w-100")
-        div(class="col-md-7")
-          h1(class="mt-0 mb-2 text-white") BIO
-          p(class="mb-3 text-white") Alejandra Azuero-Quijano is a PhD student and freelance writer affiliated to Harvard Law School (SJD candidate) and the anthropology department at the University of Chicago (PhD program). Her current research and writing explores the relation between law and aesthetics as well as issues of legal materiality, architecture and the politics of space in the field of international law.
-          p(class="mb-3 text-white") Azuero-Quijano's writing has appeared in Al Jazeera America and New American Writing.
-          p(class="mb-3 text-white") Her most recent project, [Re]Designing Crime after WWII: The Making of the Nuremberg Courtroom, explores the role of the U.S. Office of Strategic Services in defining the aesthetics of criminal justice at the Nuremberg Trials.
-          p(class="mb-3 text-white") Before moving to the U.S., Azuero-Quijano worked for UN-Women, IOM and UNHCR. Born in Bogota (Colombia), she obtained her LL.B. from Universidad de los Andes.
+        div(class="bg-image col-md-5 pr-0 pl-0 bg-profile")
+
+        div(class="col-md-7 bg-white pl-0")
+          div(class="p-5")
+            h1(class="m-0") Bio
+            div(class="divider divider-green-light mb-3 mt-3")
+            p(class="mb-3") Alejandra Azuero-Quijano is a PhD student and freelance writer affiliated to Harvard Law School (SJD candidate) and the anthropology department at the University of Chicago (PhD program). Her current research and writing explores the relation between law and aesthetics as well as issues of legal materiality, architecture and the politics of space in the field of international law.
+            p(class="mb-3") Azuero-Quijano's writing has appeared in Al Jazeera America and New American Writing.
+            p(class="mb-3") Her most recent project, [Re]Designing Crime after WWII: The Making of the Nuremberg Courtroom, explores the role of the U.S. Office of Strategic Services in defining the aesthetics of criminal justice at the Nuremberg Trials.
+            p(class="mb-0") Before moving to the U.S., Azuero-Quijano worked for UN-Women, IOM and UNHCR. Born in Bogota (Colombia), she obtained her LL.B. from Universidad de los Andes.
+
+  div(id="research-statement" class="bg-image bg-nuremberg-001 block-full")
+
+    div(class="container-outer")
+      div(class="container")
+        div(class="row")
+          div(class="col-md-12 bg-black pl-0")
+            div(class="p-5")
+              h1(class="m-0") Research Statement
+              div(class="divider divider-green mb-3 mt-3")
+              
+              p(class="mb-4 text-sm") My research examines the role of law in political transition. In particular, I focus on the way in which 
+                em forensic practices 
+                span shape moments of social crisis, visions of accountability, and the politics of justice. Forensics is frequently understood as the science of criminal truth that arrives after the fact. In contrast, my work puts forward a concept of forensic knowledge as a discourse and practice that works 
+                em before 
+                span any criminal act to reshape existing social conditions. It is precisely this transformative potential, I argue, that extends forensics’ influence beyond criminal liability to defining the politics of legal accountability and justice in the context of political change. But, how in practice does forensic knowledge shape horizons of political transformation? In what ways does it constitute a medium for enabling or disabling alternative visions of law and justice? For the past ten years, my work as a legal scholar and an anthropologist has addressed these questions from a dual perspective – the rise of global criminal liability after World War II and post-Cold War political transitions in Latin America – using a combination of legal analysis, ethnography, and historiography. My research on forensic practices contributes an interdisciplinary understanding to the ways in which non-legal experts have come to shape the limits of criminal justice and legal accountability.
+              a(href="#" class="btn btn-main btn-lg") VIEW IN FULL
+              

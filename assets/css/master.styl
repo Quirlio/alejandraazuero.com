@@ -5,7 +5,7 @@ base()
 
 html,
 body
-  background: $white
+  background: $black
 
 html, html a
   -webkit-font-smoothing: antialiased
@@ -16,7 +16,10 @@ li
   font-family: 'Nunito Sans', sans-serif
   font-size: 21px
   font-weight: 400
-  color: $black
+  color: $white
+
+.text-sm
+  font-size: 18px
 
 h1,
 h2,
@@ -30,17 +33,25 @@ ul
   padding-left: 0
 
 a
-  color: $blue-light
+  color: $green-light
   font-weight: 400
 
 a:hover,
 a:focus
-  color: $blue-light
+  color: $green-light
   text-decoration: none
 
 .link-main
   display: inline-block
   margin: 0 10px
+  font-size: 18px
+  font-weight: 600
+  text-transform: uppercase
+
+.btn-main
+  background: $green
+  color: $green-light
+  font-weight: 600
 
 h1,
 h2,
@@ -58,11 +69,17 @@ h2
   font-size: 40px
   line-height: 1 !important
 
+.container-outer
+  padding: 30px 10px
+
+.container-outer-compact
+  padding: 50px 0
+
 .block-full
   min-height: 100vh
 
 .divider
-  width: 100px
+  width: 100%
   height: 3px
   display: inline-block
 
@@ -74,6 +91,9 @@ h2
 
 .divider-green-light
   background: $green-light
+
+.divider-green
+  background: $green
 
 .divider-blue-light
   background: $blue-light
@@ -87,8 +107,32 @@ h2
 .bg-white
   background: $white
 
+.bg-white p,
+.bg-white h1
+  color: $black
+
 .bg-black
   background: $black
 
 .text-white
   color: $white
+
+.bg-image
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+.bg-profile
+  background-image: url(/img/alejandra-azuero-quijano.jpg)
+  min-height: 30vh
+
+.bg-nuremberg-001
+  background-image: url(/img/bg-nuremberg-001.jpg)
+
+@media (min-width: 767px)
+
+  .container-outer
+    padding: 120px 0
