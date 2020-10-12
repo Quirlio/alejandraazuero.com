@@ -50,7 +50,7 @@ a:focus
 
 .link-main
   display: inline-block
-  margin: 0 10px
+  margin: 5px 10px
   font-size: 18px
   font-weight: 600
   text-transform: uppercase
@@ -83,10 +83,13 @@ h2
   line-height: 1.25 !important
 
 .container-outer
-  padding: 30px 10px
+  padding: 0
 
 .container-outer-compact
-  padding: 50px 0
+  padding: 0
+
+.block
+  padding: 27px
 
 .block-full
   min-height: 100vh
@@ -124,7 +127,7 @@ h2
   background: $black
 
 .bg-grey
-  background: $grey
+  background: $black
 
 .text-white
   color: $white
@@ -149,17 +152,35 @@ h2
 
 .bg-current-project
   background-image: url(/img/forensics-of-design.jpg)
+  min-height: 450px
 
 .bg-nuremberg-project
   background-image: url(/img/forensics-of-finance.jpg)
+  min-height: 450px
 
 .grey-dark
   color: $grey-light
 
+.title-section
+  margin: 51px 0 0 0 !important
+
+.title-section.inside
+  margin: 21px 0 0 0 !important
+
+
 @media (min-width: 767px)
+
+  .title-section
+    margin: 0 !important
+
+  .bg-grey
+    background: $grey
 
   h1
     font-size: 44px
 
   .container-outer
     padding: 120px 0
+
+  .container-outer-compact
+    padding: 50px 0
